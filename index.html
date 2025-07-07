@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Gia</title>
+  <meta charset="UTF-8">
+  <title>Gia Bouncing Bubble</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    #bubble {
+      position: absolute;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 100px;
+      color: #ff80ff;
+      text-shadow: 4px 4px 10px #ffb3ff, -2px -2px 5px #fff;
+      font-weight: bold;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Gia</h1>
+  <div id="bubble">Gia</div>
+
+  <script>
+    const bubble = document.getElementById('bubble');
+    let x = 100, y = 100;
+    let dx = 3, dy = 2;
+
+    function animate() {
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      const bubbleWidth = bubble.offsetWidth;
+      const bubbleHeight = bubble.offsetHeight;
+
+      x += dx;
+      y += dy;
+
+      // Bounce off edges
+      if (x + bubbleWidth >= screenWidth || x <= 0) dx = -dx;
+      if (y + bubbleHeight >= screenHeight || y <= 0) dy = -dy;
+
+      bubble.style.left = x + 'px';
+      bubble.style.top = y + 'px';
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
 </body>
 </html>
+
