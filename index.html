@@ -11,7 +11,9 @@
       font-family: Arial, sans-serif;
       background: #2c3e50; /* Pale navy blue */
       color: #fff;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
@@ -20,6 +22,19 @@
       color: #ffffff;
       margin-top: 60px;
       margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 30px;
+    }
+
+    .sports-section {
+      text-align: left;
+      width: 45%;
     }
 
     h2 {
@@ -30,45 +45,55 @@
     }
 
     hr {
-      width: 60%;
       border: 1px solid #aaa;
-      margin: 20px auto;
+      margin: 10px 0 20px 0;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
-      margin: 0 auto;
-      width: fit-content;
-      text-align: left;
+      margin: 0;
     }
 
     ul li {
       font-size: 18px;
       margin: 5px 0;
     }
+
+    .placeholder {
+      width: 45%;
+    }
   </style>
 </head>
 <body>
 
   <h1>Gianna Lalita Chhabra 💙</h1>
-  <h2>Sports</h2>
-  <hr>
-  <ul>
-    <li>Swim</li>
-    <li>Tennis</li>
-    <li>Volleyball</li>
-    <li>Basketball</li>
-    <li>Soccer</li>
-    <li>Tae Kwon Do</li>
-    <li>Parkour</li>
-    <li>Gymnastics</li>
-    <li>Ice Skating</li>
-    <li>Horseback Riding</li>
-    <li>Mountain Biking</li>
-    <li>Rock Climbing</li>
-    <li>Paddle Boarding</li>
-  </ul>
+
+  <div class="content">
+    <div class="sports-section">
+      <h2>Sports</h2>
+      <hr>
+      <ul>
+        <li>🏊‍♀️ Swim</li>
+        <li>🎾 Tennis</li>
+        <li>🏐 Volleyball</li>
+        <li>🏀 Basketball</li>
+        <li>⚽ Soccer</li>
+        <li>🥋 Tae Kwon Do</li>
+        <li>🤸‍♀️ Parkour</li>
+        <li>🤸 Gymnastics</li>
+        <li>⛸ Ice Skating</li>
+        <li>🐎 Horseback Riding</li>
+        <li>🚵 Mountain Biking</li>
+        <li>🧗 Rock Climbing</li>
+        <li>🏄‍♀️ Paddle Boarding</li>
+      </ul>
+    </div>
+
+    <div class="placeholder">
+      <!-- Empty for now — space for future sections like Bio, Photos, etc. -->
+    </div>
+  </div>
 
 </body>
 </html>
