@@ -1,95 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Chore Tracker</title>
+  <meta charset="UTF-8">
+  <title>Gianna Lalita Chhabra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 20px;
+      background: #fefefe;
+      color: #333;
       text-align: center;
     }
-    .box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #444;
+      margin-top: 50px;
+      margin-bottom: 10px;
     }
-    select, input {
-      padding: 10px;
-      margin: 10px;
-      border-radius: 5px;
+
+    hr {
+      width: 60%;
       border: 1px solid #ccc;
-      width: 250px;
+      margin: 20px auto;
     }
-    button {
-      padding: 10px 20px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      width: fit-content;
+      text-align: left;
     }
-    #output {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    .result {
-      margin-top: 10px;
-      background: #e6ffe6;
-      padding: 10px;
-      border-radius: 5px;
+
+    ul li {
+      font-size: 18px;
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>🧹 Gia & Jayden's Chore Tracker</h1>
-
-  <div class="box">
-    <form id="choreForm">
-      <select id="person" required>
-        <option value="">Who did the chore?</option>
-        <option value="Gia">Gia</option>
-        <option value="Jayden">Jayden</option>
-      </select><br>
-
-      <select id="points" required>
-        <option value="">How many points is it worth?</option>
-        <option value="5">5 points</option>
-        <option value="10">10 points</option>
-        <option value="15">15 points</option>
-        <option value="20">20 points</option>
-      </select><br>
-
-      <input type="text" id="chore" placeholder="What was the chore?" required><br>
-
-      <button type="submit">Submit Chore ✅</button>
-    </form>
-
-    <div id="output"></div>
-  </div>
-
-  <script>
-    const form = document.getElementById('choreForm');
-    const output = document.getElementById('output');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const person = document.getElementById('person').value;
-      const points = document.getElementById('points').value;
-      const chore = document.getElementById('chore').value;
-
-      const result = document.createElement('div');
-      result.className = 'result';
-      result.textContent = `${person} earned ${points} points for: ${chore}`;
-      output.appendChild(result);
-
-      form.reset();
-    });
-  </script>
+  <h1>Gianna Lalita Chhabra</h1>
+  <h2>Sports</h2>
+  <hr>
+  <ul>
+    <li>Swim</li>
+    <li>Tennis</li>
+    <li>Volleyball</li>
+    <li>Basketball</li>
+    <li>Soccer</li>
+    <li>Tae Kwon Do</li>
+    <li>Parkour</li>
+    <li>Gymnastics</li>
+    <li>Ice Skating</li>
+    <li>Horseback Riding</li>
+    <li>Mountain Biking</li>
+    <li>Rock Climbing</li>
+    <li>Paddle Boarding</li>
+  </ul>
 
 </body>
 </html>
