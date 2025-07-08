@@ -2,67 +2,50 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>My Sports Experience</title>
+<title>Gianna Lalita Chhabra - Sports</title>
 <style>
   body {
     background-color: #1c2e4a;
     color: white;
     font-family: 'Segoe UI', sans-serif;
     padding: 30px;
+    text-align: center;
   }
 
-  /* Titles container */
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-  }
-
-  .left-title, .right-title {
+  /* Name with blue heart */
+  .name-header {
     font-family: 'Brush Script MT', cursive;
-    font-size: 48px;
-    line-height: 1.1;
-    max-width: 48%;
-  }
-
-  .left-title {
-    display: flex;
+    font-size: 56px;
+    margin-bottom: 5px;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
   }
-
   .blue-heart {
     color: #2196f3; /* bright blue */
-    font-size: 48px;
+    font-size: 56px;
     user-select: none;
   }
 
-  .right-title {
-    text-align: right;
-    white-space: normal;
-    word-break: break-word;
+  /* Sports title with underline */
+  .section-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 44px;
+    margin: 20px auto 30px auto;
+    max-width: 180px;
+    border-bottom: 3px solid #2196f3;
+    padding-bottom: 5px;
   }
 
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
-      gap: 20px;
-    }
-    .left-title, .right-title {
-      max-width: 100%;
-      text-align: center;
-      font-size: 40px;
-    }
-  }
-
-  /* Sports list styles */
   ul {
     list-style-type: none;
     padding-left: 0;
     font-size: 20px;
     line-height: 2;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
   }
 
   li {
@@ -82,35 +65,13 @@
 </head>
 <body>
 
-  <!-- Titles row -->
-  <div class="container">
-    <div class="left-title">
-      Gia Chhabra <span class="blue-heart">💙</span>
-    </div>
-    <div class="right-title">
-      Non-Athletic<br>Extra Curriculars
-    </div>
-  </div>
+  <header class="name-header">
+    Gianna Lalita Chhabra <span class="blue-heart">💙</span>
+  </header>
 
-  <!-- Sports list -->
+  <h2 class="section-title">Sports</h2>
+
   <ul>
     <li><span class="emoji">🎾</span> Tennis – 11 years</li>
     <li><span class="emoji">⚽</span> Soccer – 10 years</li>
-    <li><span class="emoji">🚵‍♀️</span> Mountain Biking – 9 years</li>
-    <li><span class="emoji">🏊‍♀️</span> Swim and Dive – 8 years</li>
-    <li><span class="emoji">🏀</span> Basketball – 7 years</li>
-    <li><span class="emoji">🏐</span> Volleyball – 4 years</li>
-    <li><span class="emoji">🩰</span> Ballet – 3 years</li>
-    <li><span class="emoji">👞</span> Tap – 3 years</li>
-    <li><span class="emoji">🕺</span> Hip Hop – 3 years</li>
-    <li><span class="emoji">🐎</span> Horse Back Riding – 3 years</li>
-    <li><span class="emoji">🧗</span> Rock Climbing – 3 years</li>
-    <li><span class="emoji">🤸</span> Gymnastics – 3 years</li>
-    <li><span class="emoji">⛸️</span> Ice Skating – 2 years</li>
-    <li><span class="emoji">🏄‍♀️</span> Paddle Boarding – 2 years</li>
-    <li><span class="emoji">🥋</span> Tae Kwon Do – 2 years</li>
-    <li><span class="emoji">🤸‍♂️</span> Parkour – 1 year</li>
-  </ul>
-
-</body>
-</html>
+    <li><span class
