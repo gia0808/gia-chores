@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Gianna Lalita Chhabra - Sports</title>
+<title>Gianna Lalita Chhabra - Activities</title>
 <style>
   body {
     background-color: #1c2e4a;
@@ -12,11 +12,11 @@
     text-align: center;
   }
 
-  /* Name with blue heart */
+  /* Name with blue heart - centered on top */
   .name-header {
     font-family: 'Brush Script MT', cursive;
     font-size: 56px;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -28,14 +28,29 @@
     user-select: none;
   }
 
-  /* Sports title with underline */
+  /* Container for two columns */
+  .columns-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 60px;
+    text-align: left;
+  }
+
+  /* Each column */
+  .column {
+    flex: 1;
+  }
+
+  /* Titles with underline */
   .section-title {
     font-family: 'Brush Script MT', cursive;
     font-size: 44px;
-    margin: 20px auto 30px auto;
-    max-width: 180px;
+    margin-bottom: 20px;
     border-bottom: 3px solid #2196f3;
     padding-bottom: 5px;
+    max-width: max-content;
   }
 
   ul {
@@ -43,9 +58,8 @@
     padding-left: 0;
     font-size: 20px;
     line-height: 2;
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
+    max-width: 100%;
+    margin: 0;
   }
 
   li {
@@ -61,6 +75,22 @@
   .emoji:hover {
     transform: rotate(10deg) scale(1.1);
   }
+
+  /* Responsive: stack columns on small screens */
+  @media (max-width: 800px) {
+    .columns-container {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+    .column {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    ul {
+      text-align: left; /* keep list left aligned for readability */
+    }
+  }
 </style>
 </head>
 <body>
@@ -69,26 +99,36 @@
     Gianna Lalita Chhabra <span class="blue-heart">💙</span>
   </header>
 
-  <h2 class="section-title">Sports</h2>
+  <div class="columns-container">
+    <div class="column">
+      <h2 class="section-title">Sports</h2>
+      <ul>
+        <li><span class="emoji">🎾</span> Tennis – 11 years</li>
+        <li><span class="emoji">⚽</span> Soccer – 10 years</li>
+        <li><span class="emoji">🚵‍♀️</span> Mountain Biking – 9 years</li>
+        <li><span class="emoji">🏊‍♀️</span> Swim and Dive – 8 years</li>
+        <li><span class="emoji">🏀</span> Basketball – 7 years</li>
+        <li><span class="emoji">🏐</span> Volleyball – 4 years</li>
+        <li><span class="emoji">🩰</span> Ballet – 3 years</li>
+        <li><span class="emoji">👞</span> Tap – 3 years</li>
+        <li><span class="emoji">🕺</span> Hip Hop – 3 years</li>
+        <li><span class="emoji">🐎</span> Horse Back Riding – 3 years</li>
+        <li><span class="emoji">🧗</span> Rock Climbing – 3 years</li>
+        <li><span class="emoji">🤸</span> Gymnastics – 3 years</li>
+        <li><span class="emoji">⛸️</span> Ice Skating – 2 years</li>
+        <li><span class="emoji">🏄‍♀️</span> Paddle Boarding – 2 years</li>
+        <li><span class="emoji">🥋</span> Tae Kwon Do – 2 years</li>
+        <li><span class="emoji">🤸‍♂️</span> Parkour – 1 year</li>
+      </ul>
+    </div>
 
-  <ul>
-    <li><span class="emoji">🎾</span> Tennis – 11 years</li>
-    <li><span class="emoji">⚽</span> Soccer – 10 years</li>
-    <li><span class="emoji">🚵‍♀️</span> Mountain Biking – 9 years</li>
-    <li><span class="emoji">🏊‍♀️</span> Swim and Dive – 8 years</li>
-    <li><span class="emoji">🏀</span> Basketball – 7 years</li>
-    <li><span class="emoji">🏐</span> Volleyball – 4 years</li>
-    <li><span class="emoji">🩰</span> Ballet – 3 years</li>
-    <li><span class="emoji">👞</span> Tap – 3 years</li>
-    <li><span class="emoji">🕺</span> Hip Hop – 3 years</li>
-    <li><span class="emoji">🐎</span> Horse Back Riding – 3 years</li>
-    <li><span class="emoji">🧗</span> Rock Climbing – 3 years</li>
-    <li><span class="emoji">🤸</span> Gymnastics – 3 years</li>
-    <li><span class="emoji">⛸️</span> Ice Skating – 2 years</li>
-    <li><span class="emoji">🏄‍♀️</span> Paddle Boarding – 2 years</li>
-    <li><span class="emoji">🥋</span> Tae Kwon Do – 2 years</li>
-    <li><span class="emoji">🤸‍♂️</span> Parkour – 1 year</li>
-  </ul>
+    <div class="column">
+      <h2 class="section-title">Non-Athletic<br>Extra Curriculars</h2>
+      <ul>
+        <!-- Your non-athletic extracurricular activities go here -->
+      </ul>
+    </div>
+  </div>
 
 </body>
 </html>
