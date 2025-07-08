@@ -2,114 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Sports Experience</title>
+  <title>Gianna Lalita Chhabra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #1c2e4a;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 30px;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #2c3e50; /* Pale navy blue */
+      color: #fff;
+      text-align: center;
     }
 
     h1 {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 60px;
-      text-align: center;
-      margin-bottom: 30px;
-      padding: 20px;
-      border: 4px solid transparent;
-      border-radius: 20px;
-      background-clip: padding-box;
-      position: relative;
-      cursor: pointer;
+      font-family: 'Great Vibes', cursive;
+      font-size: 64px;
+      color: #ffffff;
+      margin-top: 60px;
+      margin-bottom: 10px;
     }
 
-    h1::before {
-      content: "";
-      position: absolute;
-      top: -4px;
-      left: -4px;
-      right: -4px;
-      bottom: -4px;
-      z-index: -1;
-      background: linear-gradient(45deg, #4fc3f7, #a7ffeb, #81d4fa, #f8bbd0);
-      border-radius: 24px;
-      filter: blur(8px);
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: #ffffff;
+      margin-bottom: 10px;
     }
 
-    /* Sparkle effect on click */
-    .sparkle::after {
-      content: "✨";
-      position: absolute;
-      font-size: 30px;
-      top: -15px;
-      right: -15px;
-      animation: sparklePop 0.6s ease-out forwards;
-    }
-
-    @keyframes sparklePop {
-      0% {
-        transform: scale(0);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1.5);
-        opacity: 0;
-      }
+    hr {
+      width: 60%;
+      border: 1px solid #aaa;
+      margin: 20px auto;
     }
 
     ul {
       list-style-type: none;
-      padding-left: 0;
-      font-size: 20px;
-      line-height: 2;
+      padding: 0;
+      margin: 0 auto;
+      width: fit-content;
+      text-align: left;
     }
 
-    li {
-      margin-bottom: 5px;
-    }
-
-    .emoji {
-      display: inline-block;
-      transition: transform 0.3s ease;
-      margin-right: 8px;
-    }
-
-    .emoji:hover {
-      transform: rotate(10deg) scale(1.1);
+    ul li {
+      font-size: 18px;
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <h1 id="title">My Sports Experience</h1>
 
+  <h1>Gianna Lalita Chhabra 💙</h1>
+  <h2>Sports</h2>
+  <hr>
   <ul>
-    <li><span class="emoji">🎾</span> Tennis – 11 years</li>
-    <li><span class="emoji">⚽</span> Soccer – 10 years</li>
-    <li><span class="emoji">🚵‍♀️</span> Mountain Biking – 9 years</li>
-    <li><span class="emoji">🏊‍♀️</span> Swim and Dive – 8 years</li>
-    <li><span class="emoji">🏀</span> Basketball – 7 years</li>
-    <li><span class="emoji">🏐</span> Volleyball – 4 years</li>
-    <li><span class="emoji">🩰</span> Ballet – 3 years</li>
-    <li><span class="emoji">👞</span> Tap – 3 years</li>
-    <li><span class="emoji">🕺</span> Hip Hop – 3 years</li>
-    <li><span class="emoji">🐎</span> Horse Back Riding – 3 years</li>
-    <li><span class="emoji">🧗</span> Rock Climbing – 3 years</li>
-    <li><span class="emoji">🤸</span> Gymnastics – 3 years</li>
-    <li><span class="emoji">⛸️</span> Ice Skating – 2 years</li>
-    <li><span class="emoji">🏄‍♀️</span> Paddle Boarding – 2 years</li>
-    <li><span class="emoji">🥋</span> Tae Kwon Do – 2 years</li>
-    <li><span class="emoji">🤸‍♂️</span> Parkour – 1 year</li>
+    <li>Swim</li>
+    <li>Tennis</li>
+    <li>Volleyball</li>
+    <li>Basketball</li>
+    <li>Soccer</li>
+    <li>Tae Kwon Do</li>
+    <li>Parkour</li>
+    <li>Gymnastics</li>
+    <li>Ice Skating</li>
+    <li>Horseback Riding</li>
+    <li>Mountain Biking</li>
+    <li>Rock Climbing</li>
+    <li>Paddle Boarding</li>
   </ul>
 
-  <script>
-    const title = document.getElementById("title");
-    title.addEventListener("click", () => {
-      title.classList.add("sparkle");
-      setTimeout(() => title.classList.remove("sparkle"), 600);
-    });
-  </script>
 </body>
 </html>
