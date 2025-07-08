@@ -1,57 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Gia Bouncing Bubble</title>
+  <title>Chore Tracker</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #111;
-      overflow: hidden;
-      height: 100%;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
     }
-
-    #bubble {
-      position: absolute;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      font-size: 100px;
-      color: #ff80ff;
-      text-shadow: 4px 4px 10px #ffb3ff, -2px -2px 5px #fff;
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    select, input {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 250px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
       font-weight: bold;
-      user-select: none;
+    }
+    .result {
+      margin-top: 10px;
+      background: #e6ffe6;
+      padding: 10px;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <div id="bubble">Gia</div>
+
+  <h1>🧹 Gia & Jayden's Chore Tracker</h1>
+
+  <div class="box">
+    <form id="choreForm">
+      <select id="person" required>
+        <option value="">Who did the chore?</option>
+        <option value="Gia">Gia</option>
+        <option value="Jayden">Jayden</option>
+      </select><br>
+
+      <select id="points" required>
+        <option value="">How many points is it worth?</option>
+        <option value="5">5 points</option>
+        <option value="10">10 points</option>
+        <option value="15">15 points</option>
+        <option value="20">20 points</option>
+      </select><br>
+
+      <input type="text" id="chore" placeholder="What was the chore?" required><br>
+
+      <button type="submit">Submit Chore ✅</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
 
   <script>
-    const bubble = document.getElementById('bubble');
-    let x = 100, y = 100;
-    let dx = 3, dy = 2;
+    const form = document.getElementById('choreForm');
+    const output = document.getElementById('output');
 
-    function animate() {
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
-      const bubbleWidth = bubble.offsetWidth;
-      const bubbleHeight = bubble.offsetHeight;
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-      x += dx;
-      y += dy;
+      const person = document.getElementById('person').value;
+      const points = document.getElementById('points').value;
+      const chore = document.getElementById('chore').value;
 
-      // Bounce off edges
-      if (x + bubbleWidth >= screenWidth || x <= 0) dx = -dx;
-      if (y + bubbleHeight >= screenHeight || y <= 0) dy = -dy;
+      const result = document.createElement('div');
+      result.className = 'result';
+      result.textContent = `${person} earned ${points} points for: ${chore}`;
+      output.appendChild(result);
 
-      bubble.style.left = x + 'px';
-      bubble.style.top = y + 'px';
-
-      requestAnimationFrame(animate);
-    }
-
-    animate();
+      form.reset();
+    });
   </script>
+
 </body>
 </html>
-
