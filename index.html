@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Gianna Lalita Chhabra - Activities</title>
-<style>
-  body {
-    background-color: #1c2e4a;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-    padding: 30px;
-    text-align: center;
-  }
-
-  /* Name with blue heart - centered on top */
-  .name-header {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 56px;
-    margin-bottom: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
-  .blue-heart {
-    color: #2196f3; /* bright blue */
-    font-size: 56px;
-    user-select: none;
-  }
-
-  /* Container for two columns */
-  .columns-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 60px;
-    text-align: left;
-  }
-
-  /* Each column */
-  .column {
-    flex: 1;
-  }
-
-  /* Titles with underline */
-  .section-title {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 44px;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #2196f3;
-    padding-bottom: 5px;
-    max-width: max-content;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 20px;
-    line-height: 2;
-    max-width: 100%;
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
-
-  .emoji {
-    display: inline-block;
-    transition: transform 0.3s ease;
-    margin-right: 8px;
-  }
-
-  .emoji:hover {
-    transform: rotate(10deg) scale(1.1);
-  }
-
-  /* Responsive: stack columns on small screens */
-  @media (max-width: 800px) {
-    .columns-container {
-      flex-direction: column;
-      gap: 40px;
+  <meta charset="UTF-8" />
+  <title>Gianna Lalita Chhabra - Activities</title>
+  <style>
+    body {
+      background-color: #1c2e4a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
       text-align: center;
     }
-    .column {
-      max-width: 500px;
+
+    /* Name with blue heart - centered on top */
+    .name-header {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 56px;
+      margin-bottom: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .blue-heart {
+      color: #2196f3;
+      font-size: 56px;
+      user-select: none;
+    }
+
+    /* Container for two columns */
+    .columns-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
       margin: 0 auto;
+      gap: 60px;
+      text-align: left;
     }
+
+    .column {
+      flex: 1;
+    }
+
+    .section-title {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 44px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #2196f3;
+      padding-bottom: 5px;
+      max-width: max-content;
+    }
+
     ul {
-      text-align: left; /* keep list left aligned for readability */
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 20px;
+      line-height: 2;
+      max-width: 100%;
+      margin: 0;
     }
-  }
-</style>
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .emoji {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      margin-right: 8px;
+    }
+
+    .emoji:hover {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    /* Responsive layout for smaller screens */
+    @media (max-width: 800px) {
+      .columns-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+      }
+      .column {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      ul {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Header with name -->
   <header class="name-header">
     Gianna Lalita Chhabra <span class="blue-heart">💙</span>
   </header>
 
+  <!-- Two-column layout -->
   <div class="columns-container">
+
+    <!-- Sports Section -->
     <div class="column">
       <h2 class="section-title">Sports</h2>
       <ul>
         <li><span class="emoji">🎾</span> Tennis – 11 years</li>
+        <li><span class="emoji">⛷️</span> Skiing – 11 years</li>
         <li><span class="emoji">⚽</span> Soccer – 10 years</li>
         <li><span class="emoji">🚵‍♀️</span> Mountain Biking – 9 years</li>
         <li><span class="emoji">🏊‍♀️</span> Swim and Dive – 8 years</li>
@@ -122,12 +126,20 @@
       </ul>
     </div>
 
+    <!-- Non-Athletic Extra Curriculars -->
     <div class="column">
       <h2 class="section-title">Non-Athletic<br>Extra Curriculars</h2>
       <ul>
-        <!-- Your non-athletic extracurricular activities go here -->
+        <li><span class="emoji">🎹</span> Piano (Competitions) – 10 years</li>
+        <li><span class="emoji">♟️</span> Chess / Chess Club – 8 years</li>
+        <li><span class="emoji">🤖</span> LEGO Robotics – 8 years</li>
+        <li><span class="emoji">🧵</span> Sewing – 8 years</li>
+        <li><span class="emoji">🎭</span> Theater – 8 years</li>
+        <li><span class="emoji">🎤</span> Voice Lessons – 3 years</li>
+        <li><span class="emoji">📸</span> Modeling – 3 years</li>
       </ul>
     </div>
+
   </div>
 
 </body>
