@@ -79,13 +79,11 @@
       margin-bottom: 6px;
     }
 
-    /* ===== LINK GLOW EFFECT ===== */
+    /* ===== Base link glow (used for non-sport links) ===== */
     a {
       color: #9fd3ff;
       text-decoration: none;
-      transition: 
-        text-shadow 0.25s ease,
-        color 0.25s ease;
+      transition: text-shadow 0.25s ease, color 0.25s ease;
     }
 
     a:hover {
@@ -94,6 +92,63 @@
         0 0 6px rgba(159, 211, 255, 0.8),
         0 0 12px rgba(159, 211, 255, 0.6),
         0 0 20px rgba(159, 211, 255, 0.4);
+    }
+
+    /* ===== Sports: custom glow colors per link ===== */
+    a.sport-tennis:hover {
+      color: #d7ffe6;
+      text-shadow:
+        0 0 6px rgba(34, 197, 94, 0.95),
+        0 0 14px rgba(34, 197, 94, 0.75),
+        0 0 28px rgba(34, 197, 94, 0.55);
+    }
+
+    a.sport-ski:hover {
+      color: #e6f0ff;
+      text-shadow:
+        0 0 6px rgba(96, 165, 250, 0.95),
+        0 0 14px rgba(96, 165, 250, 0.70),
+        0 0 28px rgba(96, 165, 250, 0.50);
+    }
+
+    a.sport-soccer:hover {
+      color: #ffe9f4;
+      text-shadow:
+        0 0 6px rgba(236, 72, 153, 0.95),
+        0 0 14px rgba(236, 72, 153, 0.70),
+        0 0 28px rgba(236, 72, 153, 0.50);
+    }
+
+    a.sport-swim:hover {
+      color: #e9fbff;
+      text-shadow:
+        0 0 6px rgba(34, 211, 238, 0.95),
+        0 0 14px rgba(34, 211, 238, 0.70),
+        0 0 28px rgba(34, 211, 238, 0.50);
+    }
+
+    a.sport-basketball:hover {
+      color: #fff0e6;
+      text-shadow:
+        0 0 6px rgba(249, 115, 22, 0.95),
+        0 0 14px rgba(249, 115, 22, 0.70),
+        0 0 28px rgba(249, 115, 22, 0.50);
+    }
+
+    a.sport-volleyball:hover {
+      color: #f3e8ff;
+      text-shadow:
+        0 0 6px rgba(168, 85, 247, 0.95),
+        0 0 14px rgba(168, 85, 247, 0.70),
+        0 0 28px rgba(168, 85, 247, 0.50);
+    }
+
+    a.sport-riding:hover {
+      color: #fff7e6;
+      text-shadow:
+        0 0 6px rgba(234, 179, 8, 0.95),
+        0 0 14px rgba(234, 179, 8, 0.70),
+        0 0 28px rgba(234, 179, 8, 0.50);
     }
 
     .school-title {
@@ -139,7 +194,7 @@
 
 <body>
 
-  <div class="year">2025</div>
+  <div class="year">2026</div>
 
   <div class="header">
     Gianna Lalita Chhabra
@@ -155,13 +210,27 @@
     <div class="column">
       <h2>Sports</h2>
       <ul>
-        <li><a href="tennis.html">🎾 Tennis – 11 years</a></li>
-        <li><a href="skiing.html">⛷️ Skiing – 11 years</a></li>
-        <li><a href="soccer.html">⚽ Soccer – 10 years</a></li>
-        <li><a href="swimdive.html">🏊‍♀️ Swim and Dive – 8 years</a></li>
-        <li><a href="basketball.html">🏀 Basketball – 7 years</a></li>
-        <li><a href="volleyball.html">🏐 Volleyball – 4 years</a></li>
-        <li><a href="riding.html">🐎 Horseback Riding – 3 years</a></li>
+        <li>
+          <a class="sport-tennis" href="tennis.html">🎾 Tennis – 11 years - varsity, tournament competitor, club player</a>
+        </li>
+        <li>
+          <a class="sport-ski" href="skiing.html">⛷️ Skiing – 11 years</a>
+        </li>
+        <li>
+          <a class="sport-soccer" href="soccer.html">⚽ Soccer – 10 years - MVP Ricks Center, club player</a>
+        </li>
+        <li>
+          <a class="sport-swim" href="swimdive.html">🏊‍♀️ Swim and Dive – 8 years</a>
+        </li>
+        <li>
+          <a class="sport-basketball" href="basketball.html">🏀 Basketball – 7 years - MVP Ricks Center</a>
+        </li>
+        <li>
+          <a class="sport-volleyball" href="volleyball.html">🏐 Volleyball – 4 years - MVP at Ricks Center</a>
+        </li>
+        <li>
+          <a class="sport-riding" href="riding.html">🐎 Horseback Riding – 3 years</a>
+        </li>
       </ul>
     </div>
 
