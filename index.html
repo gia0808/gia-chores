@@ -6,8 +6,8 @@
 
   <style>
     body {
-      background: #000000; /* black */
-      color: #9fd3ff; /* light blue */
+      background: #000000;
+      color: #9fd3ff;
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 40px;
@@ -67,7 +67,6 @@
       border-bottom: 2px solid #9fd3ff;
       padding-bottom: 5px;
       margin-bottom: 15px;
-      color: #9fd3ff;
     }
 
     ul {
@@ -89,28 +88,14 @@
       text-decoration: underline;
     }
 
-    .gpa-inline {
-      font-size: 18px;
-      font-weight: 600;
-      margin-left: 6px;
-      color: #9fd3ff;
-    }
-
-    /* --- NEW: Academic Record organization --- */
-    .school-section {
-      margin-top: 10px;
-      margin-bottom: 14px;
-    }
-
+    /* Academic styling */
     .school-title {
       font-size: 18px;
       font-weight: 800;
       margin: 12px 0 6px;
-      letter-spacing: 0.2px;
     }
 
     .school-title.cch {
-      /* red / white / blue */
       background: linear-gradient(90deg, #e63946, #ffffff, #1d4ed8);
       -webkit-background-clip: text;
       background-clip: text;
@@ -118,34 +103,19 @@
     }
 
     .school-title.ricks {
-      color: #d16b7a; /* light maroon for black background */
+      color: #d16b7a;
     }
 
     .record-row {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
       gap: 12px;
-      padding: 2px 0;
     }
 
-    .record-row .left {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 8px;
-      min-width: 0;
-    }
-
-    .record-row .meta {
+    .meta {
       font-size: 16px;
       font-weight: 600;
-      opacity: 0.95;
       white-space: nowrap;
-    }
-
-    .record-row .meta .sep {
-      opacity: 0.85;
-      margin: 0 6px;
     }
   </style>
 </head>
@@ -196,42 +166,35 @@
     <div class="column">
       <h2>Academic Record</h2>
 
-      <div class="school-section">
-        <div class="school-title cch">Cherry Creek High School</div>
-        <ul>
-          <li class="record-row">
-            <span class="left">
-              <a href="grade9.html">Freshman Year</a>
-            </span>
-            <span class="meta">GPA: 4.2</span>
-          </li>
-          <li><a href="grade10.html">Sophomore Year</a></li>
-          <li><a href="grade11.html">Junior Year</a></li>
-          <li><a href="grade12.html">Senior Year</a></li>
-        </ul>
-      </div>
+      <div class="school-title cch">Cherry Creek High School</div>
+      <ul>
+        <li class="record-row">
+          <a href="grade9.html">Freshman Year</a>
+          <span class="meta">GPA: 4.2</span>
+        </li>
+      </ul>
 
-      <div class="school-section">
-        <div class="school-title ricks">Ricks Center for Gifted and Talented Children</div>
-        <ul>
-          <li class="record-row">
-            <span class="left"><a href="grade8.html">8th Grade</a></span>
-            <span class="meta">GPA: ___ <span class="sep">|</span> ___%</span>
-          </li>
-          <li class="record-row">
-            <span class="left"><a href="grade7.html">7th Grade</a></span>
-            <span class="meta">GPA: ___ <span class="sep">|</span> ___%</span>
-          </li>
-          <li class="record-row">
-            <span class="left"><a href="grade6.html">6th Grade</a></span>
-            <span class="meta">GPA: ___ <span class="sep">|</span> ___%</span>
-          </li>
-          <li class="record-row">
-            <span class="left"><a href="grade5.html">5th Grade</a></span>
-            <span class="meta">GPA: ___ <span class="sep">|</span> ___%</span>
-          </li>
-        </ul>
+      <div class="school-title ricks">
+        Ricks Center for Gifted Children, University of Denver
       </div>
+      <ul>
+        <li class="record-row">
+          <a href="grade8.html">8th Grade</a>
+          <span class="meta">GPA: 4.0 | __%</span>
+        </li>
+        <li class="record-row">
+          <a href="grade7.html">7th Grade</a>
+          <span class="meta">GPA: 4.0 | __%</span>
+        </li>
+        <li class="record-row">
+          <a href="grade6.html">6th Grade</a>
+          <span class="meta">GPA: 4.0 | __%</span>
+        </li>
+        <li class="record-row">
+          <a href="grade5.html">5th Grade</a>
+          <span class="meta">GPA: 4.0 | __%</span>
+        </li>
+      </ul>
 
     </div>
 
