@@ -11,7 +11,7 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 40px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
       position: relative;
@@ -29,29 +29,27 @@
       text-align: center;
       font-family: 'Brush Script MT', cursive;
       font-size: 60px;
-      margin-bottom: 6px;
-      color: #9fd3ff;
+      margin-bottom: 8px;
     }
 
     .tagline {
       text-align: center;
       font-size: 16px;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
       opacity: 0.9;
     }
 
     .profile-pic {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .profile-pic img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      transform: scale(1.5);
       border: 4px solid #9fd3ff;
       box-shadow: 0 0 20px rgba(159, 211, 255, 0.35);
     }
@@ -85,11 +83,11 @@
       margin-bottom: 6px;
     }
 
-    /* ===== Base glow ===== */
+    /* Base glow */
     a {
       color: #9fd3ff;
       text-decoration: none;
-      transition: text-shadow 0.25s ease, color 0.25s ease;
+      transition: color 0.25s ease, text-shadow 0.25s ease;
     }
 
     a:hover {
@@ -100,40 +98,16 @@
         0 0 20px rgba(159, 211, 255, 0.4);
     }
 
-    /* ===== Sport-specific glow ===== */
-    a.sport-tennis:hover {
-      color: #d7ffe6;
-      text-shadow:
-        0 0 6px rgba(34, 197, 94, 0.95),
-        0 0 14px rgba(34, 197, 94, 0.75),
-        0 0 28px rgba(34, 197, 94, 0.55);
-    }
+    /* Sport-specific glows */
+    a.sport-tennis:hover { text-shadow: 0 0 28px rgba(34,197,94,0.8); }
+    a.sport-ski:hover { text-shadow: 0 0 22px rgba(96,165,250,0.7); }
+    a.sport-soccer:hover { text-shadow: 0 0 22px rgba(236,72,153,0.7); }
+    a.sport-swim:hover { text-shadow: 0 0 22px rgba(34,211,238,0.7); }
+    a.sport-basketball:hover { text-shadow: 0 0 22px rgba(249,115,22,0.7); }
+    a.sport-volleyball:hover { text-shadow: 0 0 22px rgba(168,85,247,0.7); }
+    a.sport-riding:hover { text-shadow: 0 0 22px rgba(234,179,8,0.7); }
 
-    a.sport-ski:hover {
-      text-shadow: 0 0 20px rgba(96, 165, 250, 0.7);
-    }
-
-    a.sport-soccer:hover {
-      text-shadow: 0 0 20px rgba(236, 72, 153, 0.7);
-    }
-
-    a.sport-swim:hover {
-      text-shadow: 0 0 20px rgba(34, 211, 238, 0.7);
-    }
-
-    a.sport-basketball:hover {
-      text-shadow: 0 0 20px rgba(249, 115, 22, 0.7);
-    }
-
-    a.sport-volleyball:hover {
-      text-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
-    }
-
-    a.sport-riding:hover {
-      text-shadow: 0 0 20px rgba(234, 179, 8, 0.7);
-    }
-
-    /* ===== Academic styling ===== */
+    /* Academic */
     .school-title {
       font-size: 18px;
       font-weight: 800;
@@ -164,10 +138,9 @@
       white-space: nowrap;
     }
 
-    /* ===== Extra sections ===== */
     .highlight {
       font-size: 18px;
-      line-height: 1.4;
+      line-height: 1.45;
     }
   </style>
 </head>
@@ -202,7 +175,21 @@
       </ul>
     </div>
 
-    <!-- ACADEMIC RECORD -->
+    <!-- NON-ATHLETIC (RESTORED) -->
+    <div class="column">
+      <h2>Non-Athletic Extracurriculars</h2>
+      <ul>
+        <li><a href="piano.html">🎹 Piano (Competitions) – 10 years</a></li>
+        <li><a href="chess.html">♞ Chess / Chess Club – 8 years</a></li>
+        <li><a href="theater.html">🎭 Theater – 8 years</a></li>
+        <li><a href="lego.html">🧰 Lego Robotics – 8 years</a></li>
+        <li><a href="sewing.html">🧵 Sewing – 8 years</a></li>
+        <li><a href="voice.html">🎤 Voice Lessons – 3 years</a></li>
+        <li><a href="modeling.html">📸 Modeling – 3 years</a></li>
+      </ul>
+    </div>
+
+    <!-- ACADEMIC + HIGHLIGHTS -->
     <div class="column">
       <h2>Academic Record</h2>
 
@@ -225,11 +212,8 @@
         <li class="record-row"><a href="grade6.html">6th Grade</a><span class="meta">GPA: 4.0 | 97%</span></li>
         <li class="record-row"><a href="grade5.html">5th Grade</a><span class="meta">GPA: 4.0 | 99%</span></li>
       </ul>
-    </div>
 
-    <!-- HIGHLIGHTS -->
-    <div class="column">
-      <h2>Leadership & Highlights</h2>
+      <h2 style="margin-top:30px;">Leadership & Highlights</h2>
       <div class="highlight">
         • Varsity Tennis Player<br>
         • Multi-sport MVP (Ricks Center)<br>
