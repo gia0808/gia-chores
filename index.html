@@ -29,13 +29,20 @@
       text-align: center;
       font-family: 'Brush Script MT', cursive;
       font-size: 60px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       color: #9fd3ff;
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      opacity: 0.9;
     }
 
     .profile-pic {
       text-align: center;
-      margin-top: 20px;
       margin-bottom: 40px;
     }
 
@@ -54,12 +61,11 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 40px;
-      margin-top: 20px;
     }
 
     .column {
       flex: 1;
-      min-width: 250px;
+      min-width: 260px;
     }
 
     .column h2 {
@@ -79,7 +85,7 @@
       margin-bottom: 6px;
     }
 
-    /* ===== Base link glow (used for non-sport links) ===== */
+    /* ===== Base glow ===== */
     a {
       color: #9fd3ff;
       text-decoration: none;
@@ -94,7 +100,7 @@
         0 0 20px rgba(159, 211, 255, 0.4);
     }
 
-    /* ===== Sports: custom glow colors per link ===== */
+    /* ===== Sport-specific glow ===== */
     a.sport-tennis:hover {
       color: #d7ffe6;
       text-shadow:
@@ -104,58 +110,34 @@
     }
 
     a.sport-ski:hover {
-      color: #e6f0ff;
-      text-shadow:
-        0 0 6px rgba(96, 165, 250, 0.95),
-        0 0 14px rgba(96, 165, 250, 0.70),
-        0 0 28px rgba(96, 165, 250, 0.50);
+      text-shadow: 0 0 20px rgba(96, 165, 250, 0.7);
     }
 
     a.sport-soccer:hover {
-      color: #ffe9f4;
-      text-shadow:
-        0 0 6px rgba(236, 72, 153, 0.95),
-        0 0 14px rgba(236, 72, 153, 0.70),
-        0 0 28px rgba(236, 72, 153, 0.50);
+      text-shadow: 0 0 20px rgba(236, 72, 153, 0.7);
     }
 
     a.sport-swim:hover {
-      color: #e9fbff;
-      text-shadow:
-        0 0 6px rgba(34, 211, 238, 0.95),
-        0 0 14px rgba(34, 211, 238, 0.70),
-        0 0 28px rgba(34, 211, 238, 0.50);
+      text-shadow: 0 0 20px rgba(34, 211, 238, 0.7);
     }
 
     a.sport-basketball:hover {
-      color: #fff0e6;
-      text-shadow:
-        0 0 6px rgba(249, 115, 22, 0.95),
-        0 0 14px rgba(249, 115, 22, 0.70),
-        0 0 28px rgba(249, 115, 22, 0.50);
+      text-shadow: 0 0 20px rgba(249, 115, 22, 0.7);
     }
 
     a.sport-volleyball:hover {
-      color: #f3e8ff;
-      text-shadow:
-        0 0 6px rgba(168, 85, 247, 0.95),
-        0 0 14px rgba(168, 85, 247, 0.70),
-        0 0 28px rgba(168, 85, 247, 0.50);
+      text-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
     }
 
     a.sport-riding:hover {
-      color: #fff7e6;
-      text-shadow:
-        0 0 6px rgba(234, 179, 8, 0.95),
-        0 0 14px rgba(234, 179, 8, 0.70),
-        0 0 28px rgba(234, 179, 8, 0.50);
+      text-shadow: 0 0 20px rgba(234, 179, 8, 0.7);
     }
 
+    /* ===== Academic styling ===== */
     .school-title {
       font-size: 18px;
       font-weight: 800;
       margin: 12px 0 6px;
-      letter-spacing: 0.2px;
       display: inline-block;
     }
 
@@ -170,14 +152,6 @@
       color: #d16b7a;
     }
 
-    /* Extra glow for school names */
-    a:hover .school-title {
-      text-shadow:
-        0 0 8px rgba(159, 211, 255, 0.8),
-        0 0 16px rgba(159, 211, 255, 0.6),
-        0 0 28px rgba(159, 211, 255, 0.4);
-    }
-
     .record-row {
       display: flex;
       justify-content: space-between;
@@ -189,6 +163,12 @@
       font-weight: 600;
       white-space: nowrap;
     }
+
+    /* ===== Extra sections ===== */
+    .highlight {
+      font-size: 18px;
+      line-height: 1.4;
+    }
   </style>
 </head>
 
@@ -196,8 +176,10 @@
 
   <div class="year">2026</div>
 
-  <div class="header">
-    Gianna Lalita Chhabra
+  <div class="header">Gianna Lalita Chhabra</div>
+
+  <div class="tagline">
+    Student-athlete with advanced academics and long-term competitive experience across individual and team sports
   </div>
 
   <div class="profile-pic">
@@ -210,41 +192,13 @@
     <div class="column">
       <h2>Sports</h2>
       <ul>
-        <li>
-          <a class="sport-tennis" href="tennis.html">🎾 Tennis – 11 years - varsity, tournament competitor, club player</a>
-        </li>
-        <li>
-          <a class="sport-ski" href="skiing.html">⛷️ Skiing – 11 years</a>
-        </li>
-        <li>
-          <a class="sport-soccer" href="soccer.html">⚽ Soccer – 10 years - MVP Ricks Center, club player</a>
-        </li>
-        <li>
-          <a class="sport-swim" href="swimdive.html">🏊‍♀️ Swim and Dive – 8 years</a>
-        </li>
-        <li>
-          <a class="sport-basketball" href="basketball.html">🏀 Basketball – 7 years - MVP Ricks Center</a>
-        </li>
-        <li>
-          <a class="sport-volleyball" href="volleyball.html">🏐 Volleyball – 4 years - MVP at Ricks Center</a>
-        </li>
-        <li>
-          <a class="sport-riding" href="riding.html">🐎 Horseback Riding – 3 years</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- NON-ATHLETIC -->
-    <div class="column">
-      <h2>Non-Athletic Extracurriculars</h2>
-      <ul>
-        <li><a href="piano.html">🎹 Piano (Competitions) – 10 years</a></li>
-        <li><a href="chess.html">♞ Chess / Chess Club – 8 years</a></li>
-        <li><a href="theater.html">🎭 Theater – 8 years</a></li>
-        <li><a href="lego.html">🧰 Lego Robotics – 8 years</a></li>
-        <li><a href="sewing.html">🧵 Sewing – 8 years</a></li>
-        <li><a href="voice.html">🎤 Voice Lessons – 3 years</a></li>
-        <li><a href="modeling.html">📸 Modeling – 3 years</a></li>
+        <li><a class="sport-tennis" href="tennis.html">🎾 Tennis – 11 years – varsity, tournament competitor, club player</a></li>
+        <li><a class="sport-ski" href="skiing.html">⛷️ Skiing – 11 years</a></li>
+        <li><a class="sport-soccer" href="soccer.html">⚽ Soccer – 10 years – MVP Ricks Center, club player</a></li>
+        <li><a class="sport-swim" href="swimdive.html">🏊‍♀️ Swim and Dive – 8 years</a></li>
+        <li><a class="sport-basketball" href="basketball.html">🏀 Basketball – 7 years – MVP Ricks Center</a></li>
+        <li><a class="sport-volleyball" href="volleyball.html">🏐 Volleyball – 4 years – MVP at Ricks Center</a></li>
+        <li><a class="sport-riding" href="riding.html">🐎 Horseback Riding – 3 years – racer</a></li>
       </ul>
     </div>
 
@@ -252,7 +206,7 @@
     <div class="column">
       <h2>Academic Record</h2>
 
-      <a href="https://cherrycreek.cherrycreekschools.org/" target="_blank" rel="noopener noreferrer">
+      <a href="https://cherrycreek.cherrycreekschools.org/" target="_blank">
         <span class="school-title cch">Cherry Creek High School</span>
       </a>
       <ul>
@@ -262,28 +216,27 @@
         </li>
       </ul>
 
-      <a href="https://morgridge.du.edu/ricks" target="_blank" rel="noopener noreferrer">
+      <a href="https://morgridge.du.edu/ricks" target="_blank">
         <span class="school-title ricks">Ricks Center for Gifted Children, University of Denver</span>
       </a>
       <ul>
-        <li class="record-row">
-          <a href="grade8.html">8th Grade</a>
-          <span class="meta">GPA: 4.0 | 98%</span>
-        </li>
-        <li class="record-row">
-          <a href="grade7.html">7th Grade</a>
-          <span class="meta">GPA: 4.0 | 99%</span>
-        </li>
-        <li class="record-row">
-          <a href="grade6.html">6th Grade</a>
-          <span class="meta">GPA: 4.0 | 97%</span>
-        </li>
-        <li class="record-row">
-          <a href="grade5.html">5th Grade</a>
-          <span class="meta">GPA: 4.0 | 99%</span>
-        </li>
+        <li class="record-row"><a href="grade8.html">8th Grade</a><span class="meta">GPA: 4.0 | 98%</span></li>
+        <li class="record-row"><a href="grade7.html">7th Grade</a><span class="meta">GPA: 4.0 | 99%</span></li>
+        <li class="record-row"><a href="grade6.html">6th Grade</a><span class="meta">GPA: 4.0 | 97%</span></li>
+        <li class="record-row"><a href="grade5.html">5th Grade</a><span class="meta">GPA: 4.0 | 99%</span></li>
       </ul>
+    </div>
 
+    <!-- HIGHLIGHTS -->
+    <div class="column">
+      <h2>Leadership & Highlights</h2>
+      <div class="highlight">
+        • Varsity Tennis Player<br>
+        • Multi-sport MVP (Ricks Center)<br>
+        • Tournament & Club Competitor<br>
+        • Gifted Education Program (University of Denver)<br>
+        • Long-term commitment across individual & team sports
+      </div>
     </div>
 
   </div>
