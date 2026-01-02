@@ -79,13 +79,21 @@
       margin-bottom: 6px;
     }
 
+    /* ===== LINK GLOW EFFECT ===== */
     a {
       color: #9fd3ff;
       text-decoration: none;
+      transition: 
+        text-shadow 0.25s ease,
+        color 0.25s ease;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #cfe9ff;
+      text-shadow:
+        0 0 6px rgba(159, 211, 255, 0.8),
+        0 0 12px rgba(159, 211, 255, 0.6),
+        0 0 20px rgba(159, 211, 255, 0.4);
     }
 
     .school-title {
@@ -105,6 +113,14 @@
 
     .school-title.ricks {
       color: #d16b7a;
+    }
+
+    /* Extra glow for school names */
+    a:hover .school-title {
+      text-shadow:
+        0 0 8px rgba(159, 211, 255, 0.8),
+        0 0 16px rgba(159, 211, 255, 0.6),
+        0 0 28px rgba(159, 211, 255, 0.4);
     }
 
     .record-row {
