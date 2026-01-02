@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <title>Gianna Lalita Chhabra</title>
+
   <style>
     body {
-      background: #cfe9ff; /* baby blue */
-      color: #000;
+      background: #000000; /* black */
+      color: #9fd3ff; /* light blue */
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 40px;
-      position: relative;
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
     }
 
     .year {
       position: absolute;
       top: 20px;
       right: 40px;
-      color: #000;
       font-size: 24px;
+      color: #9fd3ff;
     }
 
     .header {
@@ -29,6 +30,7 @@
       font-family: 'Brush Script MT', cursive;
       font-size: 60px;
       margin-bottom: 10px;
+      color: #9fd3ff;
     }
 
     .profile-pic {
@@ -43,8 +45,8 @@
       border-radius: 50%;
       object-fit: cover;
       transform: scale(1.5);
-      border: 4px solid #000;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      border: 4px solid #9fd3ff;
+      box-shadow: 0 0 20px rgba(159, 211, 255, 0.35);
     }
 
     .columns {
@@ -62,9 +64,10 @@
 
     .column h2 {
       font-size: 28px;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid #9fd3ff;
       padding-bottom: 5px;
       margin-bottom: 15px;
+      color: #9fd3ff;
     }
 
     ul {
@@ -73,36 +76,30 @@
       font-size: 20px;
     }
 
+    li {
+      margin-bottom: 6px;
+    }
+
     a {
-      color: #000;
+      color: #9fd3ff;
       text-decoration: none;
-      transition: all 0.25s ease;
-      cursor: pointer;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    /* GPA reveal */
-    .gpa {
-      display: none;
+    .gpa-inline {
       font-size: 18px;
-      margin-left: 10px;
       font-weight: 600;
-    }
-
-    input[type="checkbox"] {
-      display: none;
-    }
-
-    input[type="checkbox"]:checked + label .gpa {
-      display: inline;
+      margin-left: 6px;
+      color: #9fd3ff;
     }
   </style>
 </head>
 
 <body>
+
   <div class="year">2025</div>
 
   <div class="header">
@@ -119,17 +116,13 @@
     <div class="column">
       <h2>Sports</h2>
       <ul>
-        <li>🎾 Tennis – 11 years</li>
-        <li>⛷️ Skiing – 11 years</li>
-        <li>⚽ Soccer – 10 years</li>
-        <li>🏊‍♀️ Swim and Dive – 8 years</li>
-        <li>🏀 Basketball – 7 years</li>
-        <li>🏐 Volleyball – 4 years</li>
-        <li>🤸 Gymnastics – 3 years</li>
-        <li>🩰 Ballet – 3 years</li>
-        <li>👞 Tap – 3 years</li>
-        <li>🎉 Hip Hop – 3 years</li>
-        <li>🐎 Horseback Riding – 3 years</li>
+        <li><a href="tennis.html">🎾 Tennis – 11 years</a></li>
+        <li><a href="skiing.html">⛷️ Skiing – 11 years</a></li>
+        <li><a href="soccer.html">⚽ Soccer – 10 years</a></li>
+        <li><a href="swimdive.html">🏊‍♀️ Swim and Dive – 8 years</a></li>
+        <li><a href="basketball.html">🏀 Basketball – 7 years</a></li>
+        <li><a href="volleyball.html">🏐 Volleyball – 4 years</a></li>
+        <li><a href="riding.html">🐎 Horseback Riding – 3 years</a></li>
       </ul>
     </div>
 
@@ -137,13 +130,13 @@
     <div class="column">
       <h2>Non-Athletic Extracurriculars</h2>
       <ul>
-        <li>🎹 Piano (Competitions) – 10 years</li>
-        <li>♞ Chess / Chess Club – 8 years</li>
-        <li>🎭 Theater – 8 years</li>
-        <li>🧰 Lego Robotics – 8 years</li>
-        <li>🧵 Sewing – 8 years</li>
-        <li>🎤 Voice Lessons – 3 years</li>
-        <li>📸 Modeling – 3 years</li>
+        <li><a href="piano.html">🎹 Piano (Competitions) – 10 years</a></li>
+        <li><a href="chess.html">♞ Chess / Chess Club – 8 years</a></li>
+        <li><a href="theater.html">🎭 Theater – 8 years</a></li>
+        <li><a href="lego.html">🧰 Lego Robotics – 8 years</a></li>
+        <li><a href="sewing.html">🧵 Sewing – 8 years</a></li>
+        <li><a href="voice.html">🎤 Voice Lessons – 3 years</a></li>
+        <li><a href="modeling.html">📸 Modeling – 3 years</a></li>
       </ul>
     </div>
 
@@ -151,27 +144,23 @@
     <div class="column">
       <h2>Academic Record</h2>
       <ul>
-        <li>5th Grade</li>
-        <li>6th Grade</li>
-        <li>7th Grade</li>
-        <li>8th Grade</li>
+        <li><a href="grade5.html">5th Grade</a></li>
+        <li><a href="grade6.html">6th Grade</a></li>
+        <li><a href="grade7.html">7th Grade</a></li>
+        <li><a href="grade8.html">8th Grade</a></li>
 
-        <!-- Freshman GPA click -->
         <li>
-          <input type="checkbox" id="freshman">
-          <label for="freshman">
-            Freshman Year
-            <span class="gpa">— GPA: 4.2</span>
-          </label>
+          <a href="grade9.html">Freshman Year</a>
+          <span class="gpa-inline">— GPA: 4.2</span>
         </li>
 
-        <li>Sophomore Year</li>
-        <li>Junior Year</li>
-        <li>Senior Year</li>
+        <li><a href="grade10.html">Sophomore Year</a></li>
+        <li><a href="grade11.html">Junior Year</a></li>
+        <li><a href="grade12.html">Senior Year</a></li>
       </ul>
     </div>
 
   </div>
+
 </body>
 </html>
-
